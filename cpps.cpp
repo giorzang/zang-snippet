@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #pragma GCC target ("avx2")
-#pragma GCC optimize("O3")
-#pragma GCC optimize("unroll-loops")
+#pragma GCC optimize ("O3")
+#pragma GCC optimize ("unroll-loops")
 #define fi first
 #define se second
 #define pb push_back
@@ -24,7 +24,7 @@ namespace {
     template<class T> using MaxHeap = priority_queue<T, vector<T>,	  less<T>>;
     template<class T> using MinHeap = priority_queue<T, vector<T>, greater<T>>;
     const ld eps = 0.01 * 0.01 * 0.01 * 0.01, pi = 3.1415926535897932384626433;
-    const ll mod = 1e9 + 7, lim = 1e6 + 1411, e30 = 1ll << 30, e60 = 1ll << 60;
+    const ll mod = 1e9 + 7, lim = 1e6 + 2312, e30 = 1ll << 30, e60 = 1ll << 60;
 
     // useful functions
     template<class A, class B>
