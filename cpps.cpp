@@ -1,7 +1,10 @@
 #include <bits/stdc++.h>
-#pragma GCC target ("avx2")
-#pragma GCC optimize ("O3")
-#pragma GCC optimize ("unroll-loops")
+#ifndef Zang_LOCAL
+#define debug(...) "Kawaiiii"
+#endif
+#pragma GCC target("avx2")
+#pragma GCC optimize("O3")
+#pragma GCC optimize("unroll-loops")
 #define fi first
 #define se second
 #define pb push_back
@@ -43,11 +46,13 @@ ostream &submain(int testcase) {
 
 int main() {
     // PLEASE DO NOT EDIT, THANKS !!
-    cin.tie(nullptr) -> sync_with_stdio(false);
-    #ifndef ONLINE_JUDGE
+    cin.tie(nullptr)  -> sync_with_stdio(false);
+    cerr.tie(nullptr) -> sync_with_stdio(false);
+    #ifdef Zang_LOCAL
         freopen("input.txt", "r", stdin);
         //freopen("output.txt", "w", stdout);
         //freopen("error.txt", "w", stderr);
+        // g++ zzz.cpp -D Zang_LOCAL -o zzz; .\zzz
         rng.seed((ll)main ^ time(0));
         auto starttime = chrono::high_resolution_clock::now();
     #endif 
@@ -56,7 +61,7 @@ int main() {
     For(test, 1, testcases) submain(test);
 
     // PLEASE DO NOT EDIT, THANKS !!
-    #ifndef ONLINE_JUDGE
+    #ifdef Zang_LOCAL
         auto endtime = chrono::high_resolution_clock::now();
         auto duration = chrono::duration_cast<chrono::milliseconds>(endtime - starttime).count(); 
         cout << "\n=====" << "\nUsed: " << duration << " ms\n";
