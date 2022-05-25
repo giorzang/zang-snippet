@@ -2,9 +2,9 @@
 #ifndef Zang_LOCAL
 #define debug(...) "Kawaiiii"
 #endif
-// #pragma GCC target("avx2")
-// #pragma GCC optimize("O3")
-// #pragma GCC optimize("unroll-loops")
+#pragma GCC target("avx2")
+#pragma GCC optimize("O3")
+#pragma GCC optimize("unroll-loops")
 #define fi first
 #define se second
 #define pb push_back
@@ -24,7 +24,7 @@ namespace {
     // typedefs & constants
     using ll = long long; using ld = long double; mt19937_64 rng;
     using pii = pair<int, int>; using pli = pair<ll, int>; using pll = pair<ll, ll>;
-    template<class T> using MaxHeap = priority_queue<T, vector<T>,	  less<T>>;
+    template<class T> using MaxHeap = priority_queue<T, vector<T>,      less<T>>;
     template<class T> using MinHeap = priority_queue<T, vector<T>, greater<T>>;
     const ld eps = 0.01 * 0.01 * 0.01 * 0.01, pi = 3.1415926535897932384626433;
     const ll mod = 1e9 + 7, lim = 1e6 + 2312, e30 = 1ll << 30, e60 = 1ll << 60;
@@ -41,7 +41,7 @@ namespace {
 
 ostream &submain(int testcase) {
     // YOUR CODE GOES HERE
-    return cout << "Hello World";
+    
 }
 
 int main() {
@@ -50,9 +50,9 @@ int main() {
     cout.tie(nullptr) -> sync_with_stdio(false);
     cerr.tie(nullptr) -> sync_with_stdio(false);
     #ifdef Zang_LOCAL
-        freopen("input.txt", "r", stdin);
-        //freopen("output.txt", "w", stdout);
-        //freopen("error.txt", "w", stderr);
+        //freopen("inp.txt", "r", stdin);
+        //freopen("out.txt", "w", stdout);
+        //freopen("err.txt", "w", stderr);
         rng.seed((ll)main ^ time(0));
         auto starttime = chrono::high_resolution_clock::now();
     #endif
