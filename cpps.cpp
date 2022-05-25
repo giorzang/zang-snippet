@@ -4,9 +4,9 @@
 #else
 #define debug(x...) std::cerr << "[" << #x << "] = [", _print(x)
 #endif
-// #pragma GCC target("avx2")
-// #pragma GCC optimize("O3")
-// #pragma GCC optimize("unroll-loops")
+#pragma GCC target("avx2")
+#pragma GCC optimize("O3")
+#pragma GCC optimize("unroll-loops")
 #define fi first
 #define se second
 #define pb push_back
@@ -68,14 +68,15 @@ ostream &submain(int testcase) {
 }
  
 int main() {
-    // PLEASE DO NOT EDIT, THANKS !!
     cin .tie(nullptr) -> sync_with_stdio(false);
     cout.tie(nullptr) -> sync_with_stdio(false);
     cerr.tie(nullptr) -> sync_with_stdio(false);
+
+// PLEASE DO NOT EDIT, THANKS !!
 #ifdef Zang_LOCAL
-    freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
-    // freopen("error.txt", "w", stderr);
+    //freopen("inp.txt", "r", stdin);
+    //freopen("out.txt", "w", stdout);
+    //freopen("err.txt", "w", stderr);
     rng.seed((ll)main ^ time(0));
     auto starttime = chrono::high_resolution_clock::now();
 #endif 
@@ -85,7 +86,7 @@ int main() {
  
 // PLEASE DO NOT EDIT, THANKS !!
 #ifdef Zang_LOCAL
-     auto endtime = chrono::high_resolution_clock::now();
+    auto endtime = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::milliseconds>(endtime - starttime).count(); 
     cout << "\n=====" << "\nUsed: " << duration << " ms\n";
 #endif
