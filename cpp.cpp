@@ -22,8 +22,8 @@ namespace {
     #define Rof(i, u, v) for (int i = (u), _n_ = (v); i >= _n_; i--)
 
     // typedefs & constants
-    using ll = long long; using ld = long double; mt19937_64 rng;
-    using pii = pair<int, int>; using pli = pair<ll, int>; using pll = pair<ll, ll>;
+    using ll = long long; using ul = unsigned long int; using ld = long double; 
+    using pii = pair<int, int>;    using pll = pair<ll, ll>;    mt19937_64 rng;
     template<class T> using MaxHeap = priority_queue<T, vector<T>,	  less<T>>;
     template<class T> using MinHeap = priority_queue<T, vector<T>, greater<T>>;
     const ld eps = 0.01 * 0.01 * 0.01 * 0.01, pi = 3.1415926535897932384626433;
@@ -51,15 +51,15 @@ int main() {
 
 // PLEASE DO NOT EDIT, THANKS !!
 #ifdef Zang_LOCAL
-    //freopen("inp.txt", "r", stdin);
-    //freopen("out.txt", "w", stdout);
-    //freopen("err.txt", "w", stderr);
+    //freopen("file.INP", "r", stdin);
+    //freopen("file.OUT", "w", stdout);
+    //freopen("file.ERR", "w", stderr);
     rng.seed((ll)main ^ time(0));
     auto starttime = chrono::high_resolution_clock::now();
 #endif
 
-    int testcases = 1;
-    For(test, 1, testcases) submain(test);
+    int tc = 1;
+    For(test, 1, tc) submain(test);
 
 // PLEASE DO NOT EDIT, THANKS !!
 #ifdef Zang_LOCAL
