@@ -62,18 +62,18 @@ namespace {
 } // END OF TEMPLATE
  
 /* --------------------[ MAIN CODE GOES HERE ]-------------------- */
-/* -------------[ Author: Vu Truong Giang - giorzang ]-------------*/
 
 ostream &submain(int testcase) {
     // YOUR CODE GOES HERE
     
 }
- 
+
+/* -------------[ Author: Vu Truong Giang - giorzang ]-------------*/
 int main() {
     cin .tie(nullptr) -> sync_with_stdio(false);
     cout.tie(nullptr) -> sync_with_stdio(false);
     cerr.tie(nullptr) -> sync_with_stdio(false);
-
+    
 // PLEASE DO NOT EDIT, THANKS !!
 #ifdef Zang_LOCAL
     //freopen("file.INP", "r", stdin);
