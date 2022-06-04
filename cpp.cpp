@@ -35,10 +35,10 @@ namespace {
     template<class A, class B>
     bool Minz(A &a, B b) { return b < a && (a = b, true); }
     template<class T> T Read() { T x; return cin >> x, x; }
-} // main template
-
+} // END OF TEMPLATE
+ 
 /* --------------------[ MAIN CODE GOES HERE ]-------------------- */
-
+/* -------------[ Author: Vu Truong Giang - giorzang ]-------------*/
 ostream &submain(int testcase) {
     // YOUR CODE GOES HERE
     
