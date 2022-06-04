@@ -39,6 +39,7 @@ namespace {
  
 /* --------------------[ MAIN CODE GOES HERE ]-------------------- */
 /* -------------[ Author: Vu Truong Giang - giorzang ]-------------*/
+
 ostream &submain(int testcase) {
     // YOUR CODE GOES HERE
     
