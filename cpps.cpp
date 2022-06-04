@@ -59,9 +59,11 @@ namespace {
     void _print() { std::cerr << "]\n"; }
     template <typename T, typename... V>
     void _print(T t, V... v) { __print(t); if (sizeof...(v)) std::cerr << ", "; _print(v...); }
-} // main template
+} // END OF TEMPLATE
  
 /* --------------------[ MAIN CODE GOES HERE ]-------------------- */
+/* -------------[ Author: Vu Truong Giang - giorzang ]-------------*/
+
 ostream &submain(int testcase) {
     // YOUR CODE GOES HERE
     
