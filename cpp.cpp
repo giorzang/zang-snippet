@@ -23,7 +23,7 @@ namespace {
     #define Rof(i, u, v) for (int i = (u), _n_ = (v); i >= _n_; i--)
 
     // typedefs & constants
-    using ll = long long; using ul = unsigned long int; using ld = long double; 
+    using ll = long long; using ull = unsigned __int64; using ld = long double; 
     using pii = pair<int, int>;    using pll = pair<ll, ll>;    mt19937_64 rng;
     template<class T> using MaxHeap = priority_queue<T, vector<T>,	  less<T>>;
     template<class T> using MinHeap = priority_queue<T, vector<T>, greater<T>>;
@@ -37,7 +37,7 @@ namespace {
     bool Minz(A &a, B b) { return b < a && (a = b, true); }
     template<class T> T Read() { T x; return cin >> x, x; }
 } // END OF TEMPLATE
- 
+
 /* --------------------[ MAIN CODE GOES HERE ]-------------------- */
 
 ostream &submain(int testcase) {
