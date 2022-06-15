@@ -13,7 +13,7 @@
 #define pf push_front
 
 using namespace std;
- 
+
 /* ------------------------[ TEMPLATE ]------------------------ */
 namespace {
     // macros definitions
@@ -23,9 +23,9 @@ namespace {
     #define rall(a) (a).rbegin(), (a).rend()
     #define For(i, u, v) for (int i = (u), _n_ = (v); i <= _n_; i++)
     #define Rof(i, u, v) for (int i = (u), _n_ = (v); i >= _n_; i--)
-    
+
     // typedefs & constants
-    using ll = long long; using ul = unsigned long int; using ld = long double; 
+    using ll = long long; using ull = unsigned __int64; using ld = long double; 
     using pii = pair<int, int>;    using pll = pair<ll, ll>;    mt19937_64 rng;
     template<class T> using MaxHeap = priority_queue<T, vector<T>,	  less<T>>;
     template<class T> using MinHeap = priority_queue<T, vector<T>, greater<T>>;
@@ -61,7 +61,7 @@ namespace {
     template <typename T, typename... V>
     void _print(T t, V... v) { __print(t); if (sizeof...(v)) std::cerr << ", "; _print(v...); }
 } // END OF TEMPLATE
- 
+
 /* --------------------[ MAIN CODE GOES HERE ]-------------------- */
 
 ostream &submain(int testcase) {
@@ -83,10 +83,10 @@ int main() {
     rng.seed((ll)main ^ time(0));
     auto starttime = chrono::high_resolution_clock::now();
 #endif 
- 
+
     int tc = 1;
     For(test, 1, tc) submain(test);
- 
+
 // PLEASE DO NOT EDIT, THANKS !!
 #ifdef Zang_LOCAL
     auto endtime = chrono::high_resolution_clock::now();
