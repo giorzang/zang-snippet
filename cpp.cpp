@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
+// #pragma GCC target("avx2")
+// #pragma GCC optimize("O3")
+// #pragma GCC optimize("unroll-loops")
 #ifndef Zang_LOCAL
 #define debug(...) "Kawaiiii"
 #endif
-#pragma GCC target("avx2")
-#pragma GCC optimize("O3")
-#pragma GCC optimize("unroll-loops")
 #define fi first
 #define se second
 #define pb push_back
@@ -17,15 +17,17 @@ namespace {
     // macros definitions
     #define Gint Read<ll>()
     #define Gstr Read<string>()
+    #define sz(x) int(x.size())
     #define all(a)  (a).begin(),  (a).end()
     #define rall(a) (a).rbegin(), (a).rend()
+    #define mset(a, x) memset(a, x, sizeof(a))
     #define For(i, u, v) for (int i = (u), _n_ = (v); i <= _n_; i++)
     #define Rof(i, u, v) for (int i = (u), _n_ = (v); i >= _n_; i--)
 
     // typedefs & constants
-    using ll = long long; using ld = long double; using ull = unsigned __int64;
-    using pii = pair<int, int>;    using pll = pair<ll, ll>;    mt19937_64 rng;
-    template<class T> using MaxHeap = priority_queue<T, vector<T>,	  less<T>>;
+    using ll = long long;       using ld = long double;   using ull = uint64_t;
+    using pii = pair<int, int>; using pll = pair<ll, ll>;       mt19937_64 rng;
+    template<class T> using MaxHeap = priority_queue<T, vector<T>,    less<T>>;
     template<class T> using MinHeap = priority_queue<T, vector<T>, greater<T>>;
     const ld eps = 0.01 * 0.01 * 0.01 * 0.01, pi = 3.1415926535897932384626433;
     const ll mod = 1e9 + 7, lim = 1e6 + 2312, e30 = 1ll << 30, e60 = 1ll << 60;
@@ -41,17 +43,13 @@ namespace {
 /* --------------------[ MAIN CODE GOES HERE ]-------------------- */
 
 ostream &submain(int testcase) {
-    // YOUR CODE GOES HERE
     
 }
 
 /* -------------[ Author: Vu Truong Giang - giorzang ]-------------*/
 int main() {
-    cin .tie(nullptr) -> sync_with_stdio(false);
-    cout.tie(nullptr) -> sync_with_stdio(false);
-    cerr.tie(nullptr) -> sync_with_stdio(false);
+    cin.tie(nullptr) -> sync_with_stdio(false);
 
-// PLEASE DO NOT EDIT, THANKS !!
 #ifdef Zang_LOCAL
     //freopen("file.INP", "r", stdin);
     //freopen("file.OUT", "w", stdout);
@@ -60,16 +58,14 @@ int main() {
     auto starttime = chrono::high_resolution_clock::now();
 #endif
 
-    int tc = 1;
+    int tc = Gint;
     For(test, 1, tc) submain(test);
 
-// PLEASE DO NOT EDIT, THANKS !!
 #ifdef Zang_LOCAL
     auto endtime = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::milliseconds>(endtime - starttime).count();
     cout << "\n=====" << "\nUsed: " << duration << " ms\n";
 #endif
-}
 
 /* ---------------[ THIS IS MY KEYBOARD ¯_(ツ)_/¯ ]--------------- */
 /*
