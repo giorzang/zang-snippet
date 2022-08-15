@@ -19,7 +19,7 @@ struct timer {
     double get_time() { return (clock() - t) / CLOCKS_PER_SEC; }
 };
 
-/* ------------------------[ TEMPLATE ]------------------------ */
+/* --------------[ TEMPLATE - Forked from dlbm1302 ]-------------- */
 namespace {
     // macros definitions
     #define Gint Read<ll>()
