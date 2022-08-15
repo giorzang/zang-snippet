@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/* ------------------------[ TEMPLATE ]------------------------ */
+/* --------------[ TEMPLATE - Forked from dlbm1302 ]-------------- */
 namespace {
     // macros definitions
     #define Gint Read<ll>()
