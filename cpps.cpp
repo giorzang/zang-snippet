@@ -72,6 +72,7 @@ ostream &submain(int testcase) {
 }
 
 /* -------------[ Author: Vu Truong Giang - giorzang ]-------------*/
+
 int main() {
 #define Task ""
 if (fopen(Task".inp", "r")) {
