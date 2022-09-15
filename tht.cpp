@@ -25,6 +25,7 @@ namespace {
     #define Gint Read<ll>()
     #define Gstr Read<string>()
     #define sz(x) int(x.size())
+    #define bit(x, i) (((x) >> (i)) & 1)
     #define all(a)  (a).begin(),  (a).end()
     #define rall(a) (a).rbegin(), (a).rend()
     #define mset(a, x) memset(a, x, sizeof(a))
@@ -50,12 +51,20 @@ namespace {
 /* --------------------[ MAIN CODE GOES HERE ]-------------------- */
 
 int main() {
+#define Task ""
+if (fopen(Task".inp", "r")) {
+    freopen(Task".inp", "r", stdin);
+    freopen(Task".out", "w", stdout); }
 #ifdef Zang_LOCAL
     timer start_t;
 #endif
     cin.tie(nullptr) -> sync_with_stdio(false);
     
 }
+
+// -------------------------------------------------
+// | author: Vu Truong Giang | created: xx.09.2022 |
+// -------------------------------------------------
 
 // -------------------------------------------------
 // | author: Vu Truong Giang | created: xx.08.2022 |
