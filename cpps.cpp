@@ -20,6 +20,7 @@ namespace {
     #define Gint Read<ll>()
     #define Gstr Read<string>()
     #define sz(x) int(x.size())
+    #define bit(x, i) (((x) >> (i)) & 1)
     #define all(a)  (a).begin(),  (a).end()
     #define rall(a) (a).rbegin(), (a).rend()
     #define mset(a, x) memset(a, x, sizeof(a))
@@ -72,16 +73,16 @@ ostream &submain(int testcase) {
 
 /* -------------[ Author: Vu Truong Giang - giorzang ]-------------*/
 int main() {
-    cin.tie(nullptr) -> sync_with_stdio(false);
-
+#define Task ""
+if (fopen(Task".inp", "r")) {
+    freopen(Task".inp", "r", stdin);
+    freopen(Task".out", "w", stdout); }
 #ifdef Zang_LOCAL
-    //freopen("file.INP", "r", stdin);
-    //freopen("file.OUT", "w", stdout);
-    //freopen("file.ERR", "w", stderr);
     rng.seed((ll)main ^ time(0));
     auto starttime = chrono::high_resolution_clock::now();
-#endif 
+#endif
 
+    cin.tie(nullptr) -> sync_with_stdio(false);
     int tc = Gint;
     For(test, 1, tc) submain(test);
 
