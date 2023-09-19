@@ -5,7 +5,7 @@
 		"-D", "Zang_LOCAL",
 		"-o", "${file_base_name}.exe",
 		// "&&", "start", "cmd", "/k", "$file_base_name" // cmd
-		 "&&", "${file_base_name}.exe<GIANG.inp>GIANG.out" // file
+		 "&&", "${file_base_name}.exe<D:\\ZangDev\\CodeByZang\\_Giang_\\GIANG.inp>D:\\ZangDev\\CodeByZang\\_Giang_\\GIANG.out" // file
 	],
 	"selector": "source.cpp",
 	"working_dir": "${file_path}",
