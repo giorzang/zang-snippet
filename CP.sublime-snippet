@@ -1,7 +1,6 @@
 <snippet>
 	<content><![CDATA[
 #pragma GCC optimize("O3")
-#pragma GCC target("avx,avx2,fma")
 #pragma GCC optimize("unroll-loops")
 #include <bits/stdc++.h>
 #ifndef Zang_LOCAL
@@ -52,6 +51,8 @@ namespace {
     const ll mod = 1e9 + 7, e30 = 1ll << 30, e60 = 1ll << 60;
 }
 
+using namespace std;
+
 signed main() {
     std::function<void(std::string)> fileio = [&](std::string Task) -> void {
         if (fopen((Task + ".inp").c_str(), "r")) {
@@ -60,8 +61,10 @@ signed main() {
         }
     }; fileio("");
     std::cin.tie(nullptr) -> sync_with_stdio(false);
+
     
-    
+
+    fprintf(stderr, "\n=====\nUsed: %.f ms\n", 1000.0 * clock() / CLOCKS_PER_SEC);
     return (0 ^ 0);
 }
 
