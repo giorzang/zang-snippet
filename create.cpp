@@ -4,9 +4,8 @@
 using namespace std;
 
 #define use_themis 0
-const string NAME = "", inp_type = ".inp", out_type = ".out";
-
-const int NTEST = 4;
+#define int long long
+const string NAME = "", inp_type = ".in", out_type = ".out";
 
 long long Rand(long long l, long long h) {
     return l + ((long long)rand() * (RAND_MAX + 1) * (RAND_MAX + 1) * (RAND_MAX + 1) +
@@ -15,9 +14,11 @@ long long Rand(long long l, long long h) {
                 rand()) % (h - l + 1);
 }
 
-int main() {
+
+const int NTEST = 25;
+signed main() {
     //
-    for(int iTest = 1; iTest <= NTEST; iTest++) {
+    for(int iTest = 25; iTest <= NTEST; iTest++) {
         srand((time(NULL) + iTest) * (iTest % 71) * (iTest * 71353) % 31 + iTest);
         cerr << "Make test " << iTest << " : ";
         string nTest = "";
@@ -41,7 +42,12 @@ int main() {
         out.open(outName.c_str());      // stream write output
         
         // Code phần sinh input, output ở đây
+        int n = Rand(2e5, 2e5);
+        inp << n << '\n';
 
+        for (int i = 1; i <= 2 * n; i++) {
+            inp << Rand(-1e9, 1e9) << ' ';
+        }
 
         //fi.close();
         inp.close();
